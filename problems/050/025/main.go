@@ -29,23 +29,6 @@ func main() {
 	fmt.Println("Elapsed:", time.Since(start))
 }
 
-func fibs(nth int) []uint {
-	if nth == 1 {
-		return []uint{1}
-	}
-	if nth == 2 {
-		return []uint{1, 1}
-	}
-
-	f := make([]uint, nth)
-	f[0], f[1] = 1, 1
-	for i := 2; i < nth; i++ {
-		f[i] = f[i-1] + f[i-2]
-	}
-
-	return f
-}
-
 type BigUint []int8
 
 func (left BigUint) Add(right BigUint) BigUint {

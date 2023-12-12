@@ -4,5 +4,6 @@ use (
 	./problems/050/023
 	./problems/050/024
 	./problems/050/025
+	./problems/050/026
 	./tools/project
 )
